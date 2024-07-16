@@ -14,6 +14,7 @@ Get Videos from Playlist / Insert Videos to Playlist
 
 ```
 $ pip install -r requirements.txt
+$ export PYTHONPATH=$PWD
 ```
 
 
