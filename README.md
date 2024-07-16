@@ -36,7 +36,7 @@ $ python yt_playlist.py secret.json -p --playlist PLAYLISTID [-o output.json]
 $ python yt_playlist.py -i --playlistid PLAYLISTID -f videos.json　[--order]
 ```
 
-### 注記
+### 解説
 
 Youtube Data APIへのアクセス割り当てはデフォルトで10000/日あります。
 プレイリストへの動画挿入は50消費しますので200個の動画を挿入すると割り当てをすべて消費します。
