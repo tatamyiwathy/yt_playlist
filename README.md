@@ -34,7 +34,7 @@ $ python yt_playlist.py secret.json -p --playlist PLAYLISTID [-o output.json]
 
 ```--playlistid```で指定したプレイリストへ一つ以上の動画を挿入します。挿入位置を固定したいときは```--order```オプションを使用します。（その場合プレイリストの「デフォルトの動画表示順序」が「Youtube内で手動で並べ替え」になっている必要があります）
 ```
-$ python yt_playlist.py -i --playlistid PLAYLISTID -f videos.json　[--order]
+$ python yt_playlist.py secret.json -i --playlistid PLAYLISTID -f videos.json　[--order]
 ```
 
 ### 解説
