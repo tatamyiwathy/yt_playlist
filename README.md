@@ -14,6 +14,7 @@ Get Videos from Playlist / Insert Videos to Playlist
 
 ```
 $ pip install -r requirements.txt
+$ export PYTHONPATH=$PWD
 ```
 
 
@@ -33,10 +34,10 @@ $ python yt_playlist.py secret.json -p --playlist PLAYLISTID [-o output.json]
 
 ```--playlistid```で指定したプレイリストへ一つ以上の動画を挿入します。挿入位置を固定したいときは```--order```オプションを使用します。（その場合プレイリストの「デフォルトの動画表示順序」が「Youtube内で手動で並べ替え」になっている必要があります）
 ```
-$ python yt_playlist.py -i --playlistid PLAYLISTID -f videos.json　[--order]
+$ python yt_playlist.py secret.json -i --playlistid PLAYLISTID -f videos.json　[--order]
 ```
 
-### 注記
+### 解説
 
 Youtube Data APIへのアクセス割り当てはデフォルトで10000/日あります。
 プレイリストへの動画挿入は50消費しますので200個の動画を挿入すると割り当てをすべて消費します。
